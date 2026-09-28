@@ -1,1 +1,143 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f7f5f2;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 1.2rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: normal;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  margin-bottom: 1.8rem;
+  opacity: 0.9;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #8b1e1e;
+  color: #fff;
+  padding: 0.7rem 1.6rem;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 0.95rem;
+}
+
+.btn:hover {
+  background-color: #a32626;
+}
+
+/* Sections */
+.intro,
+.content,
+.books {
+  padding: 3rem 0;
+}
+
+.page-header {
+  background-color: #eae6e1;
+  padding: 2rem 0;
+}
+
+.page-header h2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+.book {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.book h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.book-meta {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #aaa;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav a {
+    margin: 0 0.7rem;
+  }
+
+  .hero h2 {
+    font-size: 1.7rem;
+  }
+}
