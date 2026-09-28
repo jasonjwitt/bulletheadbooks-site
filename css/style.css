@@ -11,8 +11,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  color: #000000; /* Brand Black */
-  background-color: #f1f1f1; /* Light Smoke / Cool Gray */
+  color: #000000;
+  background-color: #f1f1f1;
 }
 
 .container {
@@ -23,9 +23,9 @@ body {
 
 /* Header */
 header {
-  background-color: #000000; /* Brand Black */
+  background-color: #000000;
   color: #ffffff;
-  padding: 1.1rem 0;
+  padding: 1rem 0;
 }
 
 header .container {
@@ -34,12 +34,16 @@ header .container {
   align-items: center;
 }
 
-.logo {
-  font-family: 'Newsreader', serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  color: #ab8900; /* Brass */
+.logo-link {
+  display: inline-block;
+  line-height: 0;
+}
+
+.site-logo {
+  height: 52px;
+  width: auto;
+  max-width: 280px;
+  display: block;
 }
 
 nav a {
@@ -52,7 +56,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ab8900; /* Brass on hover */
+  color: #ab8900;
 }
 
 /* Hero */
@@ -80,7 +84,7 @@ nav a:hover {
 
 .btn {
   display: inline-block;
-  background-color: #ab8900; /* Brass */
+  background-color: #ab8900;
   color: #000000;
   padding: 0.75rem 1.8rem;
   text-decoration: none;
@@ -91,7 +95,7 @@ nav a:hover {
 }
 
 .btn:hover {
-  background-color: #ffcd00; /* Secondary Gold */
+  background-color: #ffcd00;
 }
 
 /* Sections */
@@ -102,7 +106,7 @@ nav a:hover {
 }
 
 .page-header {
-  background-color: #53575a; /* Smoke */
+  background-color: #53575a;
   color: #ffffff;
   padding: 2.2rem 0;
 }
@@ -129,7 +133,7 @@ nav a:hover {
 
 .book-meta {
   font-style: italic;
-  color: #53575a; /* Smoke */
+  color: #53575a;
   margin-bottom: 0.9rem;
   font-size: 0.95rem;
 }
@@ -155,11 +159,21 @@ footer {
     margin: 0 0.8rem;
   }
 
+  .site-logo {
+    height: 44px;
+  }
+
   .hero h2 {
     font-size: 1.85rem;
   }
 
   .hero {
     padding: 3.5rem 0;
+  }
+}
+
+@media (min-width: 700px) {
+  .site-logo {
+    height: 58px;
   }
 }
