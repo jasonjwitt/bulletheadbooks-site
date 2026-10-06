@@ -1,5 +1,5 @@
 /* Google Fonts - Brand Typography */
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;600&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 /* Basic Reset */
 * {
@@ -13,6 +13,15 @@ body {
   line-height: 1.6;
   color: #000000;
   background-color: #f1f1f1;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:focus-visible {
+  outline: 2px solid #ab8900;
+  outline-offset: 3px;
 }
 
 .container {
@@ -98,6 +107,10 @@ nav a:hover {
   background-color: #ffcd00;
 }
 
+.btn:focus-visible {
+  outline-color: #ffcd00;
+}
+
 /* Sections */
 .intro,
 .content,
@@ -138,6 +151,42 @@ nav a:hover {
   font-size: 0.95rem;
 }
 
+/* Featured books: cover beside text */
+.book-feature {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.book-cover {
+  flex: 0 0 auto;
+  width: 260px;
+  height: auto;
+  display: block;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.book-details {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.book-feature .btn {
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+.book-notice {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #53575a;
+}
+
+.book-notice a {
+  color: #000000;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 /* Footer */
 footer {
   background-color: #000000;
@@ -146,6 +195,11 @@ footer {
   padding: 1.6rem 0;
   font-size: 0.9rem;
   margin-top: 3.5rem;
+}
+
+.disclosure {
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
 }
 
 /* Responsive */
@@ -169,6 +223,20 @@ footer {
 
   .hero {
     padding: 3.5rem 0;
+  }
+
+  .book-feature {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+  }
+
+  .book-cover {
+    width: 220px;
+  }
+
+  .book-details {
+    width: 100%;
   }
 }
 
