@@ -546,6 +546,67 @@ nav a:hover {
   color: #53575a;
 }
 
+/* Content pages */
+.content p {
+  margin-bottom: 1rem;
+}
+
+.content p a:not(.btn) {
+  color: #000000;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: #ab8900;
+  text-underline-offset: 3px;
+}
+
+/* About page */
+.about .container > * {
+  max-width: 760px;
+}
+
+.about .about-lead {
+  font-family: 'Newsreader', serif;
+  font-size: 1.4rem;
+  line-height: 1.55;
+  margin-bottom: 1.4rem;
+}
+
+.about h3 {
+  font-family: 'Newsreader', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 2.2rem 0 0.7rem;
+}
+
+.credits {
+  list-style: none;
+  font-family: 'Newsreader', serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about .btn {
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+.callout {
+  margin-top: 2.6rem;
+  padding: 1.2rem 1.4rem;
+  background-color: #ffffff;
+  border-left: 4px solid #ab8900;
+  font-size: 0.95rem;
+}
+
+.callout p {
+  margin-bottom: 0;
+}
+
+.callout a {
+  color: #000000;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 /* Footer */
 footer {
   background-color: #000000;
